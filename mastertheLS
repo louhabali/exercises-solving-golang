@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -p -A -t | grep -v "/$" | tr '\n' ',' | sed 's/,$//'
