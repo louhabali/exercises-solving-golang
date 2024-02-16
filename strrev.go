@@ -6,7 +6,7 @@ func StrRev(s string) string {
 
 	tap := ""
 	for x := lang - 1; x >= 0; x-- {
-		tap = string(strarray[x])
+		tap += string(strarray[x])
 	}
 	return tap
 }
