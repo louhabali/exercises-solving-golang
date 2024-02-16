@@ -6,4 +6,3 @@ func UltimateDivMod(a *int, b *int) {
 	*a = division
 	*b = remainder
 }
-
