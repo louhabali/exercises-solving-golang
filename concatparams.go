@@ -2,9 +2,12 @@ package piscine
 
 func ConcatParams(args []string) string {
 	strarray := make([]byte, 0)
-	for _, arg := range args {
+	for index, arg := range args {
 		strarray = append(strarray, arg...)
-		strarray = append(strarray, '\n')
+		if index < len(args)-1 {
+			strarray = append(strarray, '\n')
+		}
+
 	}
 	return string(strarray)
 }
