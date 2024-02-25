@@ -8,5 +8,6 @@ func PrintWordsTables(a []string) {
 		for _, f := range s {
 			z01.PrintRune(f)
 		}
+		z01.PrintRune('\n')
 	}
 }
