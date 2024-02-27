@@ -13,15 +13,16 @@ func setPoint(ptr *point) {
 	ptr.x = 42
 	ptr.y = 21
 }
-func PrintNbr(nb int){
+
+func PrintNbr(nb int) {
 	n := '0'
 	subn := '0'
-	for i:=0; i<nb/10;i++ {
+	for i := 0; i < nb/10; i++ {
 		n++
 	}
 	z01.PrintRune(n)
-	for i:=0; i<nb%10;i++ {
-		subn ++
+	for i := 0; i < nb%10; i++ {
+		subn++
 	}
 	z01.PrintRune(subn)
 }
@@ -39,6 +40,4 @@ func main() {
 	z01.PrintRune('y')
 	z01.PrintRune('=')
 	PrintNbr(points.y)
-
-
 }
