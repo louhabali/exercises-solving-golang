@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 )
 
 type point struct {
@@ -19,5 +19,8 @@ func main() {
 
 	setPoint(points)
 
-	fmt.Printf("x = %d, y = %d\n", points.x, points.y)
+	str := "x = " + string('0'+(points.x/10)) + string('0'+(points.x%10)) + ", y = " + string('0'+(points.y/10)) + string('0'+(points.y%10)) + "\n"
+	for _, character := range str {
+		z01.PrintRune(character)
+	}
 }
