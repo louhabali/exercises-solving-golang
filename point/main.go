@@ -31,8 +31,8 @@ func main() {
 	points := &point{}
 
 	setPoint(points)
-	var p [2]string 
-	p[0] = "x = " 
+	var p [2]string
+	p[0] = "x = "
 	p[1] = ", y = "
 	for i, char := range p {
 		for _, v := range char {
@@ -43,6 +43,6 @@ func main() {
 		} else {
 			PrintNbr(points.y)
 		}
-	}	
+	}
 	z01.PrintRune('\n')
 }
