@@ -40,5 +40,5 @@ func main() {
 	for _, char := range pry {
 		z01.PrintRune(char)
 	}
-	PrintNb
+	PrintNbr(points.y)
 }
