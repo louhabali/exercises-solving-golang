@@ -5,6 +5,8 @@ func Join(strs []string, sep string) string {
 	for i, ch := range strs {
 		if i < len(strs)-1 {
 			newarr += ch + sep
+		} else {
+			newarr += ch
 		}
 	}
 	return newarr
