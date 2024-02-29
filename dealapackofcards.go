@@ -1,6 +1,10 @@
 package piscine
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/01-edu/z01"
+)
 
 func DealAPackOfCards(deck []int) {
 	deckdividedby4 := 3
@@ -13,6 +17,6 @@ func DealAPackOfCards(deck []int) {
 				fmt.Print(", ")
 			}
 		}
-		fmt.Println()
+		z01.PrintRune('\n')
 	}
 }
