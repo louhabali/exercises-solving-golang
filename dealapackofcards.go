@@ -14,7 +14,7 @@ func DealAPackOfCards(deck []int) {
 		for j := 0; j < deckdividedby4; j++ {
 			fmt.Printf("%d", deck[i*deckdividedby4+j])
 			if j < deckdividedby4-1 {
-				fmt.Print(", ")
+				fmt.Printf(", ")
 			}
 		}
 		z01.PrintRune('\n')
