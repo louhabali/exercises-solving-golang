@@ -3,18 +3,15 @@ package piscine
 func ShoppingSummaryCounter(str string) map[string]int {
 	summary := make(map[string]int)
 	word := ""
-
 	for _, char := range str {
-		if char != ' ' {
-			word += string(char)
-		} else if word != "" {
+		if char == ' ' {
 			summary[word]++
 			word = ""
+
+		} else if word != "" {
+			word += string(char)
 		}
 	}
-	if word != "" {
-		summary[word]++
-	}
-
+	summary[word]++
 	return summary
 }
