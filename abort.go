@@ -11,5 +11,5 @@ func Abort(a, b, c, d, e int) int {
 			}
 		}
 	}
-	return arr[len(arr)/2+1]
+	return arr[len(arr)/2]
 }
