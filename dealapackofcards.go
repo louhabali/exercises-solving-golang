@@ -3,7 +3,7 @@ package piscine
 import "fmt"
 
 func DealAPackOfCards(deck []int) {
-	deckdividedby4 := len(deck) / 4
+	deckdividedby4 := 3
 
 	for i := 0; i < 4; i++ {
 		fmt.Printf("player %d: ", i+1)
