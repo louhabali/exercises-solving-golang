@@ -1,6 +1,6 @@
 package piscine
 
-func Compact(ptr *[]string) []string {
+func Compact(ptr *[]string) int {
 	p := *ptr
 	newarr := make([]string, 0)
 	for i := 0; i < len(p); i++ {
@@ -9,5 +9,5 @@ func Compact(ptr *[]string) []string {
 		}
 		*ptr = newarr
 	}
-	return newarr
+	return len(newarr)
 }
