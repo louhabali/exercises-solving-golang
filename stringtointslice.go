@@ -5,5 +5,8 @@ func StringToIntSlice(str string) []int {
 	for _, ch := range str {
 		intarr = append(intarr, int(ch))
 	}
+	if len(intarr) == 0 {
+		return nil
+	}
 	return intarr
 }
