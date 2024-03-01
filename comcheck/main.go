@@ -10,6 +10,7 @@ func main() {
 	for _, ch := range osarr {
 		if ch == "01" || ch == "galaxy" || ch == "galaxy 01" {
 			fmt.Println("Alert!!!")
+			break
 		} else {
 			fmt.Print("")
 		}
