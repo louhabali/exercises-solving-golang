@@ -11,7 +11,7 @@ func main() {
 		if ch == "01" || ch == "galaxy" || ch == "galaxy 01" {
 			fmt.Println("Alert!!!")
 		} else {
-			fmt.Print("")
+			return
 		}
 	}
 }
