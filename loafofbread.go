@@ -15,11 +15,13 @@ func LoafOfBread(str string) string {
 			count++
 			if count == 5 {
 				i++
-				count = 0
-				if i+1 < len(str) && str[i+1] != ' ' {
+				if i < len(str)-1 {
 					result += " "
 				}
+				count = 0
 			}
+		} else {
+			result += " "
 		}
 	}
 	return result + "\n"
