@@ -8,7 +8,13 @@ func PrintComb2() {
 			for k := '0'; k <= '9'; k++ {
 				for m := '0'; m <= '9'; m++ {
 					if i < k || (i == k && j < m) {
-						if i != '9' && j != '8' && k != '9' && m != '9' {
+						if i == '9' && j == '8' && k == '9' && m == '9' {
+							z01.PrintRune(i)
+							z01.PrintRune(j)
+							z01.PrintRune(' ')
+							z01.PrintRune(k)
+							z01.PrintRune(m)
+						} else {
 							z01.PrintRune(i)
 							z01.PrintRune(j)
 							z01.PrintRune(' ')
@@ -16,12 +22,6 @@ func PrintComb2() {
 							z01.PrintRune(m)
 							z01.PrintRune(',')
 							z01.PrintRune(' ')
-						} else {
-							z01.PrintRune(i)
-							z01.PrintRune(j)
-							z01.PrintRune(' ')
-							z01.PrintRune(k)
-							z01.PrintRune(m)
 						}
 					}
 				}
