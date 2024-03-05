@@ -5,6 +5,9 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 		if f(a[i], a[i+1]) > 0 {
 			return true
 		}
+		if f(a[i], a[i+1]) < 0 {
+			return true
+		}
 	}
 	return false
 }
