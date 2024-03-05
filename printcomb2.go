@@ -16,12 +16,14 @@ func PrintComb2() {
 							z01.PrintRune(m)
 							z01.PrintRune(',')
 							z01.PrintRune(' ')
+						} else {
+							z01.PrintRune(i)
+							z01.PrintRune(j)
+							z01.PrintRune(' ')
+							z01.PrintRune(k)
+							z01.PrintRune(m)
 						}
-						z01.PrintRune(i)
-						z01.PrintRune(j)
-						z01.PrintRune(' ')
-						z01.PrintRune(k)
-						z01.PrintRune(m)
+
 					}
 				}
 			}
