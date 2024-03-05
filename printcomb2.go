@@ -14,6 +14,7 @@ func PrintComb2() {
 							z01.PrintRune(' ')
 							z01.PrintRune(k)
 							z01.PrintRune(m)
+							z01.PrintRune('\n')
 						} else {
 							z01.PrintRune(i)
 							z01.PrintRune(j)
