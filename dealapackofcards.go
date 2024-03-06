@@ -7,13 +7,12 @@ import (
 )
 
 func DealAPackOfCards(deck []int) {
-	deckdividedby4 := 3
-
+	d := 3
 	for i := 0; i < 4; i++ {
 		fmt.Printf("Player %d: ", i+1)
-		for j := 0; j < deckdividedby4; j++ {
-			fmt.Printf("%d", deck[i*deckdividedby4+j])
-			if j < deckdividedby4-1 {
+		for j := 0; j < d; j++ {
+			fmt.Printf("%d", deck[i*d+j])
+			if j < d-1 {
 				fmt.Printf(", ")
 			}
 		}
