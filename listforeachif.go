@@ -9,3 +9,12 @@ func ListForEachIf(l *List, f func(*NodeL), condition func(*NodeL) bool) {
 		it = it.Next
 	}
 }
+
+func IsAlNode(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return false
+	default:
+		return true
+	}
+}
