@@ -34,7 +34,7 @@ func ListReverse(l *List) {
 		previous = actuel
 		actuel = next
 	}
-
+	l.Head = previous
 }
 
 func main() {
