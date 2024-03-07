@@ -22,7 +22,6 @@ func PrintNum(num int) {
 }
 
 func PrintNbr(n int) {
-
 	if n < 0 {
 		z01.PrintRune('-')
 	}
