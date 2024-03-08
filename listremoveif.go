@@ -1,24 +1,4 @@
-package piscine 
-
-type List struct {
-	Head *NodeL
-	Tail *NodeL
-}
-type NodeL struct {
-	Data interface{}
-	Next *NodeL
-}
-
-func ListPushBack(l *List, data interface{}) {
-	nouvelle := &NodeL{Data: data}
-	if l.Head == nil {
-		l.Head = nouvelle
-		l.Tail = nouvelle
-	} else {
-		l.Tail.Next = nouvelle
-		l.Tail = nouvelle
-	}
-}
+package piscine
 
 func ListRemoveIf(l *List, data_ref interface{}) {
 	for l.Head != nil && l.Head.Data == data_ref {
