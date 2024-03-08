@@ -5,13 +5,13 @@ func BTreeLevelCount(root *TreeNode) int {
 		return 0
 	}
 	count := 1
-	if root.Left != nil || root.Right != nil {
-		if root.Left != nil {
-			count += BTreeLevelCount(root.Left)
-		}
-		if root.Right != nil {
-			count += BTreeLevelCount(root.Right)
-		}
+	leftCount := BTreeLevelCount(root.Left)
+	rightCount := BTreeLevelCount(root.Right)
+
+	if leftCount > rightCount {
+		count += leftCount
+	} else {
+		count += rightCount
 	}
 	return count
 }
